@@ -9,21 +9,21 @@ ui_print("Deep cleaning...");
 ### KNOX-RELATED & ENTERPRISE SOLUTIONS
 
 ##KNOX
-delete_recursive("/system/app/KnoxAppsUpdateAgent"); #Knox Related
+#delete_recursive("/system/app/KnoxAppsUpdateAgent"); #Knox Related ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
 delete_recursive("/system/app/KnoxAttestationAgent"); #Knox Related
-delete_recursive("/system/app/KnoxFolderContainer2"); #Knox Related
-delete_recursive("/system/app/KnoxRemoteContentsProvider"); #Knox Related
-delete_recursive("/system/app/KnoxSetupWizardClient"); #Knox Related
-delete_recursive("/system/app/KnoxSwitcher"); #Knox Related
+#delete_recursive("/system/app/KnoxFolderContainer2"); #Knox Related ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
+delete_recursive("/system/app/KnoxRemoteContentsProvider"); #Knox Related ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
+#delete_recursive("/system/app/KnoxSetupWizardClient"); #Knox Related ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
+#delete_recursive("/system/app/KnoxSwitcher"); #Knox Related ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
 delete_recursive("/system/priv-app/ContainerAgent3"); #Workspace(com.samsung.android.knox.containeragent) OREO
 delete_recursive("/system/priv-app/KnoxCore"); #Personal home
-delete_recursive("/system/priv-app/KnoxDesktopLauncher"); #Knox-related*
+#delete_recursive("/system/priv-app/KnoxDesktopLauncher"); #Knox-related* ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
 delete_recursive("/system/priv-app/knoxvpnproxyhandler"); #KnoxVpnPacProcessor
 delete_recursive("/system/container/KnoxBluetooth"); #Knox-related, new in OREO
 delete_recursive("/system/container/SharedDeviceKeyguard"); #Knox-related, SharedDeviceKeyguard - com.sec.enterprise.knox.shareddevice.keyguard OREO
 delete("/system/etc/permissions/knoxsdk_edm.xml");
 delete("/system/etc/permissions/knoxsdk_mdm.xml");
-delete("/knox_data");
+#delete("/knox_data"); ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
 delete("/root/knox_changer");
 delete("/system/framework/knoxsdk.jar");
 #delete("/system/framework/arm/boot-knoxsdk.art"); #Delete this will fail to boot [00001]
@@ -60,16 +60,16 @@ delete_recursive("/system/priv-app/SecureFolder"); #Samsung's Smart Solder, Knox
 delete_recursive("/system/app/SecurityLogAgent"); #Root detection related, Knox-related
 delete_recursive("/system/app/SysScope"); #Samsung's root detection software
 delete_recursive("/system/container");
-delete_recursive("/system/containers");
-delete_recursive("/system/preload"); #SmartSwitch
-delete_recursive("/system/preloadedkiosk");
-delete_recursive("/system/preloadedsso");
+#delete_recursive("/system/containers"); ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
+#delete_recursive("/system/preload"); #SmartSwitch ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
+#delete_recursive("/system/preloadedkiosk"); ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
+#delete_recursive("/system/preloadedsso"); ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
 delete("/system/framework/timakeystore.jar");
 #delete("/system/framework/arm/boot-timakeystore.art"); #Delete this will fail to boot [00001]
 #delete("/system/framework/arm/boot-timakeystore.oat"); #Delete this will fail to boot [00001]
 #delete("/system/framework/arm64/boot-timakeystore.art"); #Delete this will fail to boot [00001]
 #delete("/system/framework/arm64/boot-timakeystore.oat"); #Delete this will fail to boot [00001]
-delete_recursive("/system/priv-app/PersonalPageService");
+#delete_recursive("/system/priv-app/PersonalPageService"); ## Does not exist in A3 2017 (A320FL) Oreo, version PHE-A320FLXXU2CRE3-20180607144102
 delete_recursive("/system/etc/secure_storage/com.samsung.android.personalpage.service"); #Private Mode
 delete_recursive("/system/etc/secure_storage/com.samsung.android.personalpage.service!dex");
 delete_recursive("/system/etc/secure_storage/com.samsung.android.securitylogagentsystem");
